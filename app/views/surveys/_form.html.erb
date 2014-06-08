@@ -1,0 +1,61 @@
+<div class="well well-md">
+  <%= simple_form_for @survey do |f| %>
+
+      <h1>Household Contact Information</h1>
+        <div><%= f.input :family_name, label: "Family Name" %></div>
+        <div><%= f.input :address, label: "Address" %></div>
+        <div><%= f.input :city, label: "City" %></div>
+        <div><%= f.input :state, label: "State" %></div>
+        <div><%= f.input :zip, label: "Zip Code" %></div>
+        <div><%= f.input :primary_phone, label: "Primary Phone Number" %></div>
+        <div><%= f.input :primary_home, label: "Cell or Home phone?" %></div>
+        <div><%= f.input :secondary_phone, label: "Secondary Phone Number" %></div>
+        <div><%= f.input :secondary_home, label: "Cell or Home phone?" %></div>
+        <div><%= f.input :primary_email, label: "Primary Email" %></div>
+        <div><%= f.input :secondary_email, label: "Secondary Email" %></div>
+
+      <h1>Household Emergency Contact Information</h1>
+        <div><%= f.input :emergency_contact, label: "Emergency Contact Name" %></div>
+        <div><%= f.input :emergency_contact_phone, label: "Emergency Contact Phone" %></div>
+        <div><%= f.input :emergency_contact_relationship, label: "What is the Relationship?" %></div>
+
+      <h1>Household Emergency Preparedness</h1>
+        <div><%= f.input :food_supply, label: "Do you maintain consistent food storage?" %></div>
+        <div><%= f.input :food_amount, label: "What is the amount of days you can feed all members of your household" %></div>
+        <div><%= f.input :water_supply, label: "Do you maintain consistent water storage?" %></div>
+        <div><%= f.input :water_amount, label: "What is the amount of water storage in gallons" %></div>
+
+      <h1>Household Member Contact Information</h1>
+        <div><%= f.input :first_name, label: "First Name" %></div>
+        <div><%= f.input :age, label: "Age" %></div>
+        <div><%= f.input :primary_phone, label: "" %></div>
+        <div><%= f.input :primary_home, label: "Phone number same as household?" %></div>
+        <div><%= f.input :primary_phone, label: "Family Member Phone Number" %></div>
+        <div><%= f.input :primary_email, label: "Email same as household?" %></div>
+        <div><%= f.input :email_same, label: "Family Member Email Address" %></div>
+
+      <h1>Household Member Special considerations</h1>
+        <div><%= f.input :allergies, label: "Does this family member have any Allergies?" %></div>
+        <div><%= f.input :allergies_explained, label: "Tell us the allergies" %></div>
+        <div><%= f.input :medications, label: "Does this family member take any Medications?" %></div>
+        <div><%= f.input :medications_explained, label: "Tell us about the medications and dosage requirements" %></div>
+        <div><%= f.input :medical_history, label: "Does this family member have any medical history information that might be beneficial to first aid personnel" %></div>
+        <div><%= f.input :medical_history_explained, label: "Tell us about the medical history" %></div>
+        <div><%= f.input :special_needs, label: "Does this family member have other Special Needs?" %></div>
+        <div><%= f.input :special_needs_explained, label: "Tell us about the special needs" %></div>
+
+      <h1>Household Member Special Skills</h1>
+        <div><%= f.input :skill, label: "Do you have ANY skills that might be beneficial in an emergency?" %></div>
+        <div><%= f.input :skill, label: "Tell us about your skill" %></div>
+        <div><%= f.input :medical_training, label: "Do you have any formal medical training?" %></div>
+        <div><%= f.input :medical_training_explained, label: "Tell us about your medical training" %></div>
+        <div><%= f.input :equipment, label: "Do you have any machinery that can assist in debris removal (trucks, backhoe, trailers, etc.)" %></div>
+        <div><%= f.input :equipment_explained, label: "Tell us your equipment" %></div>
+        <div><%= f.input :tools, label: "Do you have any other tools that could be useful in case of an emergency>" %></div>
+        <div><%= f.input :tools_explained, label: "Tell us about your tools" %></div>
+
+
+
+    <%= f.submit 'Create Household', class: 'btn btn-primary' %>
+  <% end %>
+</div>

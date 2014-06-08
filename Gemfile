@@ -11,6 +11,7 @@ gem 'rolify'
 gem 'simple_form'
 gem 'unicorn'
 gem 'unicorn-rails'
+gem 'wicked'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140213020409) do
+ActiveRecord::Schema.define(:version => 20140608184641) do
 
   create_table "roles", :force => true do |t|
     t.string   "name"
@@ -23,6 +23,49 @@ ActiveRecord::Schema.define(:version => 20140213020409) do
 
   add_index "roles", ["name", "resource_type", "resource_id"], :name => "index_roles_on_name_and_resource_type_and_resource_id"
   add_index "roles", ["name"], :name => "index_roles_on_name"
+
+  create_table "surveys", :force => true do |t|
+    t.string   "family_name"
+    t.string   "first_name"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "zip"
+    t.integer  "primary_phone"
+    t.boolean  "primary_home"
+    t.integer  "secondary_phone"
+    t.boolean  "secondary_home"
+    t.string   "primary_email"
+    t.string   "secondary_email"
+    t.string   "emergency_contact"
+    t.integer  "emergency_contact_phone"
+    t.string   "emergency_contact_relationship"
+    t.integer  "age"
+    t.boolean  "special_needs"
+    t.string   "special_needs_explained"
+    t.boolean  "allergies"
+    t.string   "allergies_explained"
+    t.boolean  "medications"
+    t.string   "medications_explained"
+    t.boolean  "medical_history"
+    t.string   "medical_history_explained"
+    t.boolean  "skill"
+    t.string   "skill_explained"
+    t.boolean  "medical_training"
+    t.string   "medical_training_explained"
+    t.boolean  "equipment"
+    t.string   "equipment_explained"
+    t.boolean  "tools"
+    t.string   "tools_explained"
+    t.boolean  "radio"
+    t.boolean  "food_supply"
+    t.integer  "food_amount"
+    t.boolean  "water_supply"
+    t.integer  "water_amount"
+    t.boolean  "email_same"
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
