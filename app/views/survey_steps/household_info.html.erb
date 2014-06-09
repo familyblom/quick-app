@@ -1,0 +1,15 @@
+<%= simple_form_for @survey, url: wizard_path do |f| %>
+  <h1>Household Contact Information</h1>
+  <div><%= f.input :family_name, label: "Family Name" %></div>
+  <div><%= f.input :address, label: "Address" %></div>
+  <div><%= f.input :city, label: "City" %></div>
+  <div><%= f.input :state, label: "State" %></div>
+  <div><%= f.input :zip, label: "Zip Code" %></div>
+  <div><%= f.input :primary_phone, label: "Primary Phone Number" %></div>
+  <div><%= f.input :primary_home, label: "Cell or Home phone?" %></div>
+  <div><%= f.input :secondary_phone, label: "Secondary Phone Number" %></div>
+  <div><%= f.input :secondary_home, label: "Cell or Home phone?" %></div>
+  <div><%= f.input :primary_email, label: "Primary Email" %></div>
+  <div><%= f.input :secondary_email, label: "Secondary Email" %></div>
+  <%= f.submit 'Continue', class: 'btn btn-primary' %>
+<% end %>

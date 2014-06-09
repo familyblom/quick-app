@@ -1,0 +1,13 @@
+<h1>Household Member Special Skills</h1>
+<div><%= f.input :skill, label: "Do you have ANY skills that might be beneficial in an emergency?" %></div>
+<div><%= f.input :skill, label: "Tell us about your skill" %></div>
+<div><%= f.input :medical_training, label: "Do you have any formal medical training?" %></div>
+<div><%= f.input :medical_training_explained, label: "Tell us about your medical training" %></div>
+<div><%= f.input :equipment, label: "Do you have any machinery that can assist in debris removal (trucks, backhoe, trailers, etc.)" %></div>
+<div><%= f.input :equipment_explained, label: "Tell us your equipment" %></div>
+<div><%= f.input :tools, label: "Do you have any other tools that could be useful in case of an emergency>" %></div>
+<div><%= f.input :tools_explained, label: "Tell us about your tools" %></div>
+
+
+
+<%= f.submit 'Create Household', class: 'btn btn-primary' %>

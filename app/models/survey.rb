@@ -1,3 +1,3 @@
 class Survey < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :family_name, :first_name, :address, :city, :state, :zip, :primary_phone, :primary_home, :secondary_phone, :secondary_home, :primary_email, :secondary_email, :emergency_contact, :emergency_contact_phone, :emergency_contact_relationship, :age, :special_needs, :special_needs_explained, :allergies, :allergies_explained, :medications, :medications_explained, :medical_history, :medical_history_explained, :skill, :skill_explained, :medical_training, :medical_training_explained, :equipment, :equipment_explained, :tools, :tools_explained, :radio, :food_supply, :food_amount, :water_supply, :water_amount, :email_same
 end
